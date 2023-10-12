@@ -34,6 +34,6 @@ export async function connectToDatabase() {
 
     return { client, db };
   } catch (error) {
-    throw new Error('Error connecting to MongoDB: ' + error.message);
+    throw new Error('Error connecting to MongoDB: ' + error);
   }
 }
